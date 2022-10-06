@@ -144,10 +144,14 @@
 .modal__agreement {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 7px;
 
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+        justify-content: center;
+    }
 }
 
 .modal__check {
@@ -172,6 +176,11 @@
 
 .modal__desc {
     color: var(--secondary-text-color);
+    font-size: 12px;
+
+    @media screen and (min-width:1200px) {
+        font-style: 14px;
+    }
 }
 
 .modal__contract {

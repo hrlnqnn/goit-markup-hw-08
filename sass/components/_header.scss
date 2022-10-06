@@ -49,13 +49,14 @@
         font-size: 26px;
         line-height: 1.4;
     }
-
-
 }
-
 
 .logo__main {
     color: var(--main-color);
+}
+
+.header__nav {
+    margin-left: 88px;
 }
 
 .header__list {
@@ -63,13 +64,10 @@
 
     @media screen and (min-width:768px) and (max-width:1199px) {
         display: flex;
-        margin-left: 88px;
     }
 
     @media screen and (min-width:1200px) {
         display: flex;
-
-        margin-left: 93px;
 
         list-style: none;
     }
@@ -114,7 +112,7 @@
 
 .header__link--studio {
     position: relative;
-    padding: 24px 0 36px 0;
+
     font-weight: 500;
     text-decoration: none;
     color: var(--main-color);
@@ -133,7 +131,13 @@
         border-radius: 2px;
     }
 
+    @media screen and (min-width:768px) {
+        padding: 24px 0 36px 0;
+    }
 
+    @media screen and (min-width:1200px) {
+        padding: 24px 0 40px 0;
+    }
 }
 
 
@@ -165,21 +169,19 @@
 
     @media screen and (min-width:768px) {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         gap: 10px;
         align-items: flex-start;
+        margin-left: auto;
     }
 
     @media screen and (min-width:1200px) {
-        display: inline-flex;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
 
-        margin-left: 344px;
-        margin-left: auto;
         margin-bottom: 0;
 
-        list-style: none;
     }
 }
 
@@ -232,10 +234,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     border: none;
+
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     padding: 0;
+    margin: 0;
     list-style: none;
 
     @media screen and (min-width:768px) {
@@ -243,8 +248,12 @@
     }
 }
 
+.burger-menu,
 .menu-toggle {
-    padding: 21px 25px 0 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
 
     &:hover,
     :focus {
@@ -258,7 +267,7 @@
     flex-direction: column;
     top: 0;
     left: 0;
-    padding-left: 40px;
+    padding: 48px 40px;
     background-color: var(--secondary-color);
     width: 100%;
     height: 100%;
@@ -272,7 +281,7 @@
 }
 
 .mobile-menu {
-    margin-bottom: 304px;
+    margin-bottom: auto;
 }
 
 .mobile-menu__link {
@@ -286,7 +295,9 @@
 }
 
 .mobile-menu li {
-    margin-bottom: 32px;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
 }
 
 .mobile-menu__link.studio {
@@ -298,7 +309,9 @@
 }
 
 .mobile-contacts li {
-    margin-bottom: 32px;
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
 }
 
 .mobile-contacts__link.number {

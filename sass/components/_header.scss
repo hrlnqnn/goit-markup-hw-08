@@ -328,9 +328,11 @@
 }
 
 .mobile-socials li {
+
     &:not(:first-child) {
         margin-left: 10px;
     }
+
 }
 
 .mobile-socials li::after {
@@ -345,5 +347,5 @@
     letter-spacing: 0.02em;
     color: var(--main-color);
     text-decoration: none;
-    //margin-right: 10px;
+    margin-right: 10px;
 }

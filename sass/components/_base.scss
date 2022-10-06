@@ -21,6 +21,10 @@ ul {
     padding: 0;
 }
 
+li {
+    list-style: none;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -28,18 +32,24 @@ img {
 }
 
 .container {
-    width: 1200px;
+    max-width: 450px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
+    margin: 0 auto;
+
+    @media screen and (min-width:768px) {
+        max-width: 738px;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 1200px;
+    }
 }
 
 .section {
-    padding: 94px 0 94px 0;
-}
+    padding: 60px 0 60px 0;
 
-.titel__none {
-    display: none;
+    @media screen and (min-width:1200px) {
+        padding: 94px 0 94px 0;
+    }
 }

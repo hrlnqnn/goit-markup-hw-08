@@ -9,32 +9,78 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/banner-bg.jpg);
+        url(../images/banner_sm.jpg);
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/banner_sm@x2.jpg');
+    }
+
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/banner_md.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/banner_md@x2.jpg');
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/banner_lg@.jpg');
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/banner_lg@x2.jpg');
+            }
+        }
+    }
 }
 
-.banner__titel {
-    width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
 
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
+.banner__title {
+    max-width: 360px;
+    margin: 0 auto;
+
     text-align: center;
     text-transform: uppercase;
+
+    font-size: 26px;
+    margin-bottom: 30px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+
     color: var(--secondary-color);
+
+    @media screen and (min-width:1200px) {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
+
 
 .banner__btn {
     display: block;
     margin: 0 auto;
 
     height: 50px;
-    min-width: 216px;
+    min-width: 200px;
 
     font-weight: 700;
     font-size: 16px;
@@ -47,4 +93,8 @@
     border-radius: 4px;
     box-shadow: var(--btn-shadow);
     cursor: pointer;
+
+    @media screen and (min-width:1200px) {
+        min-width: 216px;
+    }
 }

@@ -2,29 +2,61 @@
     background-color: var(--secondary-bg-color);
 }
 
-.team__titel {
+.team__title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: var(--main-text-color);
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 
 }
 
 .team__list {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
+
+    @media screen and (min-width:1200px) {
+        flex-wrap: nowrap;
+    }
 }
 
 .team__item {
     background-color: var(--secondary-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: var(--team-btn-shadow);
+    margin-bottom: 30px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    @media screen and (min-width:768px) {
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+
+        &:nth-child(n+3) {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        margin-bottom: 0px;
+
     }
 }
 

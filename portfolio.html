@@ -18,8 +18,13 @@
 <body>
   <header class="header">
     <div class="header__container container">
+      <a class="header__logo" href="./index.html"><span class="logo__main">Web</span>Studio</a>
+      <button class="burger-menu js-open-menu" type="button">
+        <svg class="burger-menu__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
       <nav class="header__nav">
-        <a class="header__logo" href="./index.html"><span class="logo__main">Web</span>Studio</a>
         <ul class="header__list">
           <li class="header__item"><a class="header__link" href="./index.html">Студія</a></li>
           <li class="header__item"><a class="header__link header__link--portfolio" href="#">Портфоліо</a></li>
@@ -49,8 +54,8 @@
   <main>
     <section class="section">
       <div class="container">
-        <h1 class="titel__none">Навігація</h1>
-        <ul class="projects__btns">
+        <h1 class="visually-hidden">Навігація</h1>
+        <ul class=" projects__btns">
           <li><button class="projects__btn" type="button">Усі</button></li>
           <li><button class="projects__btn" type="button">Веб-сайти</button></li>
           <li><button class="projects__btn" type="button">Додатки</button></li>
@@ -61,9 +66,18 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-1.jpg" alt="Технокряк, Веб-сайт" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-1_lg.jpg 1x, ./images/portfolio/portfolio-1_lg@2x.jpg 2x">
+                  <source media="(min-width:768px)"
+                    srcset="./images/portfolio/portfolio-1_md.jpg 1x, ./images/portfolio/portfolio-1_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-1_sm.jpg 1x, ./images/portfolio/portfolio-1_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-1_sm.jpg" alt="Технокряк, Веб-сайт" width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -78,9 +92,19 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-2.jpg" alt="Постер New Orlean vs Golden Star, Дизайн" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-2_lg.jpg 1x, ./images/portfolio/portfolio-2_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-2_md.jpg 1x, ./images/portfolio/portfolio-2_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-2_sm.jpg 1x, ./images/portfolio/portfolio-2_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-2_sm.jpg" alt="Постер New Orlean vs Golden Star, Дизайн"
+                    width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -95,9 +119,18 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-3.jpg" alt="Ресторан Seafood, Додаток" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-3_lg.jpg 1x, ./images/portfolio/portfolio-3_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-3_md.jpg 1x, ./images/portfolio/portfolio-3_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-3_sm.jpg 1x, ./images/portfolio/portfolio-3_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-3_sm.jpg" alt="Ресторан Seafood, Додаток" width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -112,9 +145,18 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-4.jpg" alt="Проєкт Prime, Маркетинг" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-4_lg.jpg 1x, ./images/portfolio/portfolio-4_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-4_md.jpg 1x, ./images/portfolio/portfolio-4_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-4_sm.jpg 1x, ./images/portfolio/portfolio-4_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-4_sm.jpg" alt="Проєкт Prime, Маркетинг" width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -129,9 +171,18 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-5.jpg" alt="Проєкт Boxes, Додаток" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-5_lg.jpg 1x, ./images/portfolio/portfolio-5_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-5_md.jpg 1x, ./images/portfolio/portfolio-5_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-5_sm.jpg 1x, ./images/portfolio/portfolio-5_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-5_sm.jpg " alt="Проєкт Boxes, Додаток" width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -146,9 +197,19 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-6.jpg" alt="Inspiration has no Borders, Веб-сайт" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-6_lg.jpg 1x, ./images/portfolio/portfolio-6_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-6_md.jpg 1x, ./images/portfolio/portfolio-6_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-6_sm.jpg 1x, ./images/portfolio/portfolio-6_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-6_sm.jpg" alt="Inspiration has no Borders, Веб-сайт"
+                    width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -163,9 +224,18 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-7.jpg" alt="Видання Limited Edition, Дизайн" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-7_lg.jpg 1x, ./images/portfolio/portfolio-7_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-7_md.jpg 1x, ./images/portfolio/portfolio-7_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-7_sm.jpg 1x, ./images/portfolio/portfolio-7_sm@2x.jpg 2x">
+                  <img src="../images/portfolio/portfolio-7_sm.jpg" alt="Видання Limited Edition, Дизайн" width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -180,9 +250,18 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-8.jpg" alt="Проєкт LAB, Маркетинг" width="370" />
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-8_lg.jpg 1x, ./images/portfolio/portfolio-8_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-8_md.jpg 1x, ./images/portfolio/portfolio-8_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-8_sm.jpg 1x, ./images/portfolio/portfolio-8_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-8_sm.jpg" alt="Проєкт LAB, Маркетинг" width="370" />
+                </picture>
                 <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                    та
                     сервісів. Все це дозволить
                     відвідувачу отримати
                     вичерпні відомості про компанію чи приватну особу.</p>
@@ -197,13 +276,21 @@
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__body">
-                <img src="./images/portfolio-9.jpg" alt="Growing Business, Додаток" width="370" />
-                <div class="projects__overlay">
-                  <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
-                    сервісів. Все це дозволить
-                    відвідувачу отримати
-                    вичерпні відомості про компанію чи приватну особу.</p>
-                </div>
+                <picture>
+                  <source media="(min-width:1200px)"
+                    srcset="./images/portfolio/portfolio-9_lg.jpg 1x, ./images/portfolio/portfolio-9_lg@2x.jpg 2x">
+                  <source media="(min-width:678px)"
+                    srcset="./images/portfolio/portfolio-9_md.jpg 1x, ./images/portfolio/portfolio-9_md@2x.jpg 2x">
+                  <source media="(max-width:767px)"
+                    srcset="./images/portfolio/portfolio-9_sm.jpg 1x, ./images/portfolio/portfolio-9_sm@2x.jpg 2x">
+                  <img src="./images/portfolio/portfolio-9_sm.jpg" alt="Growing Business, Додаток" width="370" />
+                  <div class="projects__overlay">
+                    <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу
+                      та
+                      сервісів. Все це дозволить
+                      відвідувачу отримати
+                      вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
               </div>
               <div class="projects__text">
                 <h2 class="projects__name">Growing Business</h2>
@@ -281,6 +368,34 @@
       </div>
     </div>
   </footer>
+  <!-- Mobile menu-->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="mobile-menu__close" width="40" height="40" fill="currentColor">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li><a href="./index.html" class="mobile-menu__link">Студія</a></li>
+      <li><a href="./portfolio.html" class="mobile-menu__link portfolio">Портфоліо</a></li>
+      <li><a href="#footer" class="mobile-menu__link">Контакти</a></li>
+    </ul>
+    <ul class="mobile-contacts">
+      <li><a class="mobile-contacts__link number" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <li><a class="mobile-contacts__link" href="mailto:example@mail.com">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-socials">
+      <li><a href="#" class="mobile-social__link">Instagram</a></li>
+      <li><a href="#" class="mobile-social__link">Twitter</a></li>
+      <li><a href="#" class="mobile-social__link">Facebook</a></li>
+      <li><a href="#" class="mobile-social__link">LinkedIn</a></li>
+    </ul>
+  </div>
 </body>
+<script src="./js/modal.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 
 </html>
